@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Input Form</title>
+</head>
+<body>
+    <h1>User Input Form</h1>
+    <form action="/process" method="post">
+        <!-- Change the label for "name" field -->
+        <label for="url">Enter the image URL:</label>
+        <input type="text" id="url" name="url" required>
+
+        <label for="result">OCR Result:</label>
+        <p id="result" name="result">{{ ocr_result }}</p> <!-- Display the OCR result here -->
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
